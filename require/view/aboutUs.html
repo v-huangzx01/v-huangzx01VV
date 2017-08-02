@@ -1,0 +1,44 @@
+<link rel="stylesheet" type="text/css" href="public/css/swiper.css" />
+<style type="text/css">
+	.title{margin:4% auto; padding-left:25px; width:88%; position: relative; color:rgb(136,136,136);}
+	.title i{width:15px; height: 15px; background: rgb(28,27,32); display: block; position: absolute; left:0; top:3px; transform: rotate(45deg);}
+	
+	.nav{width: 88%; margin:0 auto 4%; color: rgb(108,108,108);}
+	.nav img{margin:0 auto 5%; display: block}
+	.nav p{text-indent: 2em; text-align:justify; line-height: 23px}
+
+	.swiper-container{width:100%; margin: 0 auto 2px; text-align: center;}
+	.swiper-container > .mc-div{width:100%; height:100%; position: absolute; left:0; top:0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); z-index: 2}
+	.swiper-container > p{position: absolute; top: 50%; left: 0; right: 0; z-index: 10; margin-top: -13px; font-size: 20px; color: white;}
+	.swiper-slide img{width:100%}
+	.swiper-slide span{margin: 5% 0; font-size: 0.8rem}
+	
+</style>
+
+<div class="title">
+	<i></i>
+	<span>we care what you care</span>
+</div>
+<div ng-repeat="item in ctrl.arrList">
+	<p ng-bind="item.sex | gerFilter"></p>
+</div>
+
+
+<div class="nav">
+	<p>“名匠圈”是中国专业从事奢侈品皮具高端养护的互联网公司，拥有中国第一批从事奢侈品行业，从业经验长达20多年的领军人和业内工艺最精湛、一生专注一件事的高级匠人。</p>
+	<p>2016年年初，名匠圈在北京建立了近2000平米的奢侈品养护中心，众多国际奢侈品牌也指定名匠圈为其售后服务商，同时公司也成为了中国第一家通过了ISO900国际质量管理体系认证的奢护公司。</p>
+</div>
+
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<img src="public/images/08-02.jpg">
+		</div>
+		<div class="swiper-slide">
+			<img src="public/images/08-03.jpg">
+		</div>
+		<div class="swiper-slide">
+			<img src="public/images/08-04.jpg">
+		</div>
+	</div>
+</div>

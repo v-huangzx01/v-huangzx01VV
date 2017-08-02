@@ -1,0 +1,11 @@
+.position-div {
+  position: absolute;
+  left: 0;
+}
+.fix-div {
+  background: gray;
+  font-size: 20px;
+}
+.fix-div span {
+  color: red;
+}
